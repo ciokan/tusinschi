@@ -35,7 +35,7 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand logo" href="index.html">Silviu Tusinschi</a>
+			<a class="navbar-brand logo" href="/">Silviu Tusinschi</a>
 		</div>
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
@@ -47,7 +47,7 @@
 				<li>
 					<a href="javascript:void(0);" class="telefon">
 						<i class="fa fa-phone"></i>
-						<b>0740 444 232</b>
+						<b>0740 936 301</b>
 					</a>
 				</li>
 			</ul>
@@ -70,7 +70,7 @@
 					<br>
 					promptus</h1>
 				<p class="text-center animated fadeInUp delay6">
-					<a href="sign-in.html" class="btn btn-color btn-xxl">Contactaţi-ne</a>
+					<a href="javascript:void(0);" onClick="scrollTo('#contact-form');" class="btn btn-color btn-xxl">Contactaţi-ne</a>
 				</p>
 			</div>
 			<!-- iPhone container -->
@@ -203,26 +203,27 @@
 					Câmpurile marcate cu steluţa roşie (<span class="text-danger">*</span>) sunt obligatorii
 				</p>
 				<div class="form-white form-contact animated fadeIn delay1">
-					<form role="form">
+					<form class="jotform-form" action="http://submit.jotformeu.com/submit/40060185644348/" method="post" name="form_40060185644348" id="40060185644348" accept-charset="utf-8">
+						<input type="hidden" name="formID" value="40060185644348" />
 						<div class="form-group">
 							<div class="row">
 								<div class="col-sm-6">
 									<label for="name-1">Nume</label>
-									<input type="text" class="form-control show" id="name-1">
+									<input type="text" class="form-control show" id="name-1" name="q3_nume">
 								</div>
 								<div class="col-sm-6">
 									<label for="name-2" class="pull-right-xs">Prenume</label>
-									<input type="text" class="form-control show" id="name-2">
+									<input type="text" class="form-control show" id="name-2" name="q1_prenume">
 								</div>
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="email-contact">Adresă de email <span class="text-danger">*</span></label>
-							<input type="email" class="form-control show" id="email-contact">
+							<input type="email" class="form-control show" id="email-contact" name="q5_email">
 						</div>
 						<div class="form-group">
 							<label for="message">Mesajul tău <span class="text-danger">*</span></label>
-							<textarea id="message" class="form-control" rows="3"></textarea>
+							<textarea id="message" class="form-control" rows="3" name="q6_mesaj"></textarea>
 						</div>
 						<button type="submit" class="btn btn-block btn-color btn-xxl">Trimite mesaj</button>
 					</form>
