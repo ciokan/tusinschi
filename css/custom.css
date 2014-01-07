@@ -269,11 +269,11 @@ body {
 	margin-top: 20px;
 }
 .iphone-container {
-	width: 304px;
+	width: 293px;
 	margin: 0 auto;
 }
 .iphone-container > img {
-	width: 100%;
+	height: 400px;
 }
 .iphone-container > .iphone-screen {
 	position: absolute;
@@ -282,34 +282,6 @@ body {
 	left: 55px;
 	right: 55px;
 	overflow: hidden;
-}
-.iphone-container > .iphone-screen > .controls {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
-	background: rgba(0, 0, 0, 0.5);
-	padding: 5px;
-	margin-bottom: -46px;
-	transition: margin-bottom 0.3s;
-	-webkit-transition: margin-bottom 0.3s;
-	-moz-transition: margin-bottom 0.3s;
-}
-.iphone-container > .iphone-screen:hover > .controls {
-	margin-bottom: 0;
-}
-.iphone-container > .iphone-screen > .controls a {
-	display: inline-block;
-	padding: 0 12px;
-	border-radius: 3px;
-	background: #FFF;
-	color: #333;
-}
-.jumbotron .apps {
-	margin: 40px 0;
-}
-.jumbotron .apps > p {
-	font-size: 14px;
 }
 .jumbotron hr {
 	border-top-color: #CCC;
@@ -362,10 +334,22 @@ body {
 }
 
 /* ===== Main features ===== */
+#despre {
+	
+}
+
+#features {
+	position: relative;
+	top: -80px;
+	bottom: -100px;
+	margin-bottom: -100px;
+}
 
 .features {
+	float: none;
 	width: 960px;
-	margin: -100px auto 20px;
+	
+	margin: 0 auto 20px;
 }
 .feature {
 	float: left;
@@ -416,6 +400,9 @@ body {
 	opacity: 1;
 }
 @media (max-width: 767px) { /* for xs devices */
+	#features {
+		top: 0;
+	}
 	.features {
 		width: 100%;
 		margin: 0 0 20px;
